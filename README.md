@@ -15,3 +15,22 @@ https://api.flutter.dev/flutter/material/Scaffold-class.html
 
 <kbd>
 <img src="https://github.com/KateVu/WellcomeToFlutter/blob/master/images/app_image.png" width="200"></kbd>  <kbd>
+
+## Code
+void main() {
+  runApp(MaterialApp(
+    home: Scaffold(
+      backgroundColor: Colors.blueGrey,
+      appBar: AppBar(
+        backgroundColor: Colors.blueGrey[900],
+        title: Text('Welcome to Flutter'),
+      ),
+      body: Center(
+        child: Padding(
+              padding: EdgeInsets.all(30),
+              child: Image.asset('images/logo_lockup_flutter_horizontal.png'),
+            )
+      ),
+    ),
+  ));
+}
